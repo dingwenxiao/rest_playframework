@@ -12,7 +12,8 @@ https://github.com/typesafehub/sbteclipse
 PROJECT_DIR/project/plugins.sbt
   2)Append
   // Compile the project before generating Eclipse files, so that generated .scala or .class files for views and routes are present
-  EclipseKeys.preTasks := Seq(compile in Compile) to build.sbt
+  EclipseKeys.preTasks := Seq(compile in Compile) 
+  to build.sbt
 
   3)In the project directory, execute
   D:\play_workspace\order-api-rest-java-playframework> sbt eclipse
