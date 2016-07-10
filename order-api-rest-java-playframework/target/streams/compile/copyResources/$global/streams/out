@@ -1,0 +1,8 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(D:\play_workspace\order-api-rest-java-playframework\conf\application-mem.conf,D:\play_workspace\order-api-rest-java-playframework\target\scala-2.11\classes\application-mem.conf)[0m
+[0m[[0mdebug[0m] [0m	(D:\play_workspace\order-api-rest-java-playframework\conf\application-mysql.conf,D:\play_workspace\order-api-rest-java-playframework\target\scala-2.11\classes\application-mysql.conf)[0m
+[0m[[0mdebug[0m] [0m	(D:\play_workspace\order-api-rest-java-playframework\conf\application.conf,D:\play_workspace\order-api-rest-java-playframework\target\scala-2.11\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(D:\play_workspace\order-api-rest-java-playframework\conf\logback.xml,D:\play_workspace\order-api-rest-java-playframework\target\scala-2.11\classes\logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(D:\play_workspace\order-api-rest-java-playframework\conf\META-INF,D:\play_workspace\order-api-rest-java-playframework\target\scala-2.11\classes\META-INF)[0m
+[0m[[0mdebug[0m] [0m	(D:\play_workspace\order-api-rest-java-playframework\conf\routes,D:\play_workspace\order-api-rest-java-playframework\target\scala-2.11\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(D:\play_workspace\order-api-rest-java-playframework\conf\META-INF\persistence.xml,D:\play_workspace\order-api-rest-java-playframework\target\scala-2.11\classes\META-INF\persistence.xml)[0m

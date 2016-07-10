@@ -1,0 +1,87 @@
+@(message: String)
+
+@main(message) {
+    <h1>@message</h1>
+    <hr>
+    <p>Welcome to a API REST with Play Framework in JAVA</p>
+    <p>For test the API you can use the file extracted from PostMan or use these URIs in your Rest Client</p>
+    <table class="table table-bordered table-hover table-condensed">
+        <tr>
+            <th>Method</th>
+            <th>URI</th>
+            <th>Data</th>
+            <th>HTTP Code</th>
+            <th>Response (in JSON)</th>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/orders/customerName=John</td>
+            <td></td>
+            <td>200</td>
+            <td>{"data": [{"orderId": 3,"orderTime": 1467794649000,"totalPrice": 42,"customerName": "John"},
+        {"orderId": 5,"orderTime": 1467794649000,"totalPrice": 85,"customerName": "John"},
+        {"orderId": 6,"orderTime": 1467794649000,"totalPrice": 85,"customerName": "John"}],
+    "total": 4,
+    "link-next": "/orders?page=2&customerName=John",
+    "link-self": "/orders?customerName=John"}
+</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/orders/1</td>
+            <td></td>
+            <td>200</td>
+            <td>{"orderId": 1,"orderTime": 1467794649000,"totalPrice": 22,"customerName": "Owen"}</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/orders/8</td>
+            <td></td>
+            <td>404</td>
+            <td>{"error":"Not found 8"}</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/orders</td>
+            <td>{"totalPrice": 22, "customerName":"Stephen", orderTime": "2014-10-09 01:44:09"}</td>
+            <td>201</td>
+            <td>{"orderId": 163,"orderTime": 1412838000000,"totalPrice": 22,"customerName": "Stephen"}</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/orders</td>
+            <td></td>
+            <td>400</td>
+            <td>{"customerName": ["This field is required"]}</td>
+        </tr>
+        <tr>
+            <td>PUT/PATCH</td>
+            <td>/orders</td>
+            <td>{"totalPrice": 22, "customerName":"Stephen", orderTime": "2014-10-09 01:44:09"}</td>
+            <td>200</td>
+            <td>{"orderId": 164,"orderTime": 1412838000000,"totalPrice": 22,"customerName": "Stephen"}</td>
+        </tr>
+        <tr>
+            <td>PUT/PATCH</td>
+            <td>/orders</td>
+            <td></td>
+            <td>400</td>
+            <td>{"customerName": ["This field is required"]}</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/orders/1</td>
+            <td></td>
+            <td>200</td>
+            <td>{"msg":"Deleted 1"}</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/orders/0</td>
+            <td></td>
+            <td>404</td>
+            <td>{"error":"Not found 0"}</td>
+        </tr>
+    </table>
+    <hr>
+}

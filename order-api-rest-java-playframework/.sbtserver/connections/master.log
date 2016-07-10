@@ -1,0 +1,37 @@
+New log file opened at Sun Jul 10 16:13:36 PDT 2016 by 11472@VAIO
+Taking next connection to: 62737
+New client attempting to connect on port: 62738-62737
+  Address = /192.168.2.181:62737
+This client on port 62738 has uuid 17626bc2-e8b2-46a0-8086-8368744c4dea configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-17626bc2-e8b2-46a0-8086-8368744c4dea
+Taking next connection to: 62737
+New client attempting to connect on port: 62739-62737
+  Address = /192.168.2.181:62737
+Handshake exception on socket: 62739
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 62737
+New client attempting to connect on port: 62740-62737
+  Address = /192.168.2.181:62737
+This client on port 62740 has uuid b1745455-f7dc-4f5f-a652-cfe835f3ebee configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-17626bc2-e8b2-46a0-8086-8368744c4dea, activator-b1745455-f7dc-4f5f-a652-cfe835f3ebee
+Taking next connection to: 62737
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 11472@VAIO logs at Sun Jul 10 16:16:36 PDT 2016, goodbye.

@@ -1,0 +1,2 @@
+[info] D:\play_workspace\template-api-rest-java-playframework\app\controllers\EmployeeController.java: D:\play_workspace\template-api-rest-java-playframework\app\controllers\EmployeeController.java使用或覆盖了已过时的 API。
+[info] D:\play_workspace\template-api-rest-java-playframework\app\controllers\EmployeeController.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。

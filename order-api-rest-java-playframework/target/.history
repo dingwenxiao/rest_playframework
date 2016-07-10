@@ -1,0 +1,51 @@
+netstat -an
+q!
+exit
+activator -jvm -debug 9999
+exit
+eclipse with-source=true
+activator -jvm-debug 9999 run
+play debug
+exit
+playRun
+complie
+playRun
+exit
+playRun
+compile
+run
+playRun
+exit
+compile
+playRun
+compile
+playRun
+compile
+playRun
+compile
+playRun
+compile
+playRun
+exit
+compile
+playRun
+exit
+playRun
+compile
+playRun
+exit
+compile
+test
+exit
+playRun
+exit
+compile
+playRun
+compile
+playRun
+exit
+compile
+playRun
+exit
+playRun
+exit

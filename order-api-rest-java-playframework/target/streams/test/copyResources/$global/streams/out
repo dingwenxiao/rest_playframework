@@ -1,0 +1,3 @@
+[debug] Copy resource mappings: 
+[debug] 	(D:\play_workspace\template-api-rest-java-playframework\test\resources\employee_dataset_1.xml,D:\play_workspace\template-api-rest-java-playframework\target\scala-2.11\test-classes\employee_dataset_1.xml)
+[debug] 	(D:\play_workspace\template-api-rest-java-playframework\test\resources\orders_dataset_1.xml,D:\play_workspace\template-api-rest-java-playframework\target\scala-2.11\test-classes\orders_dataset_1.xml)

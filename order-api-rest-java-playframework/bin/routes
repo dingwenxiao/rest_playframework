@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.OrderController.index()
+
+# Order Routes API Rest
+GET     /orders     			controllers.OrderController.list(page: Integer ?= 1, size: Integer ?= 3, customerName: String)
+GET     /orders/$orderId<[0-9]+> controllers.OrderController.get(orderId: Integer)
+POST    /orders                  controllers.OrderController.create()
+PUT     /orders                  controllers.OrderController.update()
+PATCH   /orders                  controllers.OrderController.update()
+DELETE  /orders/$orderId<[0-9]+>      controllers.OrderController.delete(orderId: Integer)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
