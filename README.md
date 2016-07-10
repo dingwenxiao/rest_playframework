@@ -33,7 +33,9 @@ playRun
 
 https://www.playframework.com/documentation/2.5.x/PlayConsole
 
-In project directory, run activator -jvm-debug #debug_port "run #running_port"
+In project directory, execute command
+activator -jvm-debug #debug_port "run #running_port"
+for example,
 D:\play_workspace\order-api-rest-java-playframework> activator -jvm-debug 9999 "run 8080"
 
 http://stackoverflow.com/questions/8205067/how-do-i-change-the-default-port-9000-that-play-uses-when-i-execute-the-run
