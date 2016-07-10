@@ -1,4 +1,4 @@
-# This is a tutorial for building evironment of Rest with Playframework
+# Tutorial for building evironment of Rest with Playframework
 
 Install sbt and add it to PATH
 
