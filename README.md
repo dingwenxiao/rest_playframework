@@ -10,10 +10,9 @@ https://github.com/typesafehub/sbteclipse
 
   1)Add addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0") to
 PROJECT_DIR/project/plugins.sbt
-  2)append 
-// Compile the project before generating Eclipse files, so that generated .scala or .class files for views and routes are present
-EclipseKeys.preTasks := Seq(compile in Compile)
-to build.sbt
+  2)Append
+  // Compile the project before generating Eclipse files, so that generated .scala or .class files for views and routes are present
+  EclipseKeys.preTasks := Seq(compile in Compile) to build.sbt
 
   3)In the project directory, execute
   D:\play_workspace\order-api-rest-java-playframework> sbt eclipse
