@@ -1,37 +1,21 @@
-API REST for JAVA Play Framework
+Practice of Rest API with Play Framework
 ================================
 
 -----
-
 Welcome to a API REST with Play Framework in JAVA.
-
 For test the API you can use the file extracted from PostMan or use these URIs in your Rest Client.
-
-All routes have the port  80. This can be changed in `application.conf` file.
 
 
 | Method | URI | Data | HTTP Code | Response (in JSON) |
 | ------ | --- | ---- | --------- | ------------------ |
-| GET | /employees?page=2 |  | 200 | {"data":[{"id": 4,"name": "Josrom"},{"id": 4,"name": "Dantar"},...],"total":∞,"link-self": "/employees?page=2","link-prev": "/employees?page=1","link-next": "/employees?page=3"} |
-| GET | /employees/1 |  | 200 | {"id": 1,"name": "Josrom"} |
-| GET | /employees/6 |  | 404 | {"error":"Not found 6"} |
-| POST | /employees | {"name": "new user"} | 201 | {"id": 6,"name": "new user"} |
-| POST | /employees |  | 400 | {"name": ["This field is required"]} |
-| PUT/PATCH | /employees | {"id": 1,"name": "new name"} | 200 | {"id": 1,"name": "new name"} |
-| PUT/PATCH | /employees |  | 400 | {"name": ["This field is required"]} |
-| DELETE | /employees/1 |  | 200 | {"msg":"Deleted 1"} |
-| DELETE | /employees/0 |  | 404 | {"error":"Not found 0"} |
+| GET | /orders/customerName=John |  | 200 | {"data": [{"orderId": 3,"orderTime": 1467794649000,"totalPrice": 42,"customerName": "John"}, {"orderId": 5,"orderTime": 1467794649000,"totalPrice": 85,"customerName": "John"}, {"orderId": 6,"orderTime": 1467794649000,"totalPrice": 85,"customerName": "John"}], "total": 4, "link-next": "/orders?page=2&customerName=John", "link-self": "/orders?customerName=John"} |
+| GET | /orders/1 |  | 200 | {"orderId": 1,"orderTime": 1467794649000,"totalPrice": 22,"customerName": "Owen"} |
+| GET | /orders/8 |  | 404 | {"error":"Not found 8"} |
+| POST |/orders | 	{"totalPrice": 22, "customerName":"Stephen", orderTime": "2014-10-09 01:44:09"}	201	{"orderId": 163,"orderTime": 1412838000000,"totalPrice": 22,"customerName": "Stephen"}|
+| POST |/orders |  | 400 | {"customerName": ["This field is required"]} |
+| PUT/PATCH | /orders | {"totalPrice": 22, "customerName":"Stephen", orderTime": "2014-10-09 01:44:09"}	200	{"orderId": 164,"orderTime": 1412838000000,"totalPrice": 22,"customerName": "Stephen"}|
+| PUT/PATCH |/orders |  | 400 | {"customerName": ["This field is required"]} |
+| DELETE | /orders/1 |  | 200 | {"msg":"Deleted 1"} |
+| DELETE | /orders/0 |  | 404 | {"error":"Not found 0"} |
 
-CHANGELOG
 =========
-
-## Version 1.1
-
-- Changed Ebean ORM for JPA
-- Added pagination
-- Docblocks for all methods
-- Added test
-
-## Version 1.0
-
-- App base
