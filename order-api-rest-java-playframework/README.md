@@ -14,7 +14,7 @@ For test the API you can use the file extracted from PostMan or use these URIs i
 | GET | /orders/8 |  | 404 | {"error":"Not found 8"} |
 | POST |/orders | 	{"totalPrice": 22, "customerName":"Stephen", orderTime": "2014-10-09 01:44:09"}	|201|	{"orderId": 163,"orderTime": 1412838000000,"totalPrice": 22,"customerName": "Stephen"}|
 | POST |/orders |  | 400 | {"customerName": ["This field is required"]} |
-| PUT/PATCH | /orders | {"totalPrice": 22, "customerName":"Stephen", orderTime": "2014-10-09 01:44:09"}	200	{"orderId": 164,"orderTime": 1412838000000,"totalPrice": 22,"customerName": "Stephen"}|
+| PUT/PATCH | /orders | {"totalPrice": 22, "customerName":"Stephen", orderTime": "2014-10-09 01:44:09"}	|200|	{"orderId": 164,"orderTime": 1412838000000,"totalPrice": 22,"customerName": "Stephen"}|
 | PUT/PATCH |/orders |  | 400 | {"customerName": ["This field is required"]} |
 | DELETE | /orders/1 |  | 200 | {"msg":"Deleted 1"} |
 | DELETE | /orders/0 |  | 404 | {"error":"Not found 0"} |
