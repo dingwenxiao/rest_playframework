@@ -8,15 +8,15 @@ http://grosdim.blogspot.ca/2013/01/quick-sbt-tutorial.html
 
 https://github.com/typesafehub/sbteclipse
 
-  *Add addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0") to
+  * Add addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0") to
 PROJECT_DIR/project/plugins.sbt
  
-  *In build.sbt, append
+  * In build.sbt, append
   // Compile the project before generating Eclipse files, so that generated .scala or .class files for views and routes are present
   
   EclipseKeys.preTasks := Seq(compile in Compile) 
 
-  *In the project directory, execute
+  * In the project directory, execute
   D:\play_workspace\order-api-rest-java-playframework> sbt eclipse
  http://stackoverflow.com/questions/31511143/play-framework-executioncontext-cannot-be-resolved-when-trying-to-map-a-promis
 
