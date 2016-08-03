@@ -11,9 +11,10 @@ https://github.com/typesafehub/sbteclipse
   * Add addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0") to
 PROJECT_DIR/project/plugins.sbt
  
-  * In build.sbt, append
-  // Compile the project before generating Eclipse files, so that generated .scala or .class files for views and routes are present
+  * In build.sbt, add following statements
   
+  // Compile the project before generating Eclipse files,so that generated .scala or .class files for views and routes are present
+
   EclipseKeys.preTasks := Seq(compile in Compile) 
 
   * In the project directory, execute
